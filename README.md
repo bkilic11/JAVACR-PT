@@ -1,1 +1,1 @@
-# JAVASCRİPT KODLARI
+# ---------------JAVASCRİPT KODLARI-----------
