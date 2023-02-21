@@ -1,0 +1,17 @@
+<h1> Kullanıcıdan Alınan Metni Listeye Ekleme </h1>
+
+<input type = "text" id="metin">
+<button id="buton">Listeye Ekle </button>
+
+<ul id = "liste"></ul>
+
+<script>
+        var butonEkle=document.getElementById("buton");
+        var butonEkle=document.getElementById("liste");
+
+        butonEkle.onclick=function()
+        {
+            var eklenecekMetin = document.getElementById("metin").value;
+            listeEkle.innerHTML+="<li>"+eklenecekMetin+"</li>";
+        }
+    </script>
