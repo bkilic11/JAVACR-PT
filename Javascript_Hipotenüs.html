@@ -1,0 +1,29 @@
+<h1>JavaScript Hipotenüs Hesaplama </h1>
+
+<label> Kısa Kenar : </label>
+<input type="number" id = "KisaKenar">
+<label> Uzun Kenar : </label>
+<input type = "number" id = "UzunKenar">
+
+<button id="buton" onclick = hesapla() >Hesapla</button>
+
+<div id="sonuc"></div>
+
+<script>
+    function hesapla()
+
+    {
+        var k1=document.getElementById("KisaKenar").value;
+        var k2=document.getElementById("UzunKenar").value;
+
+        var k1 = Number(k1);
+        var k2 = Number(k2);
+
+        var hipotenüs = Math.sqrt ( (k1*k1) + (k2*k2) );
+        
+        document.getElementById("sonuc").innerHTML = "Hipotenüs : " + hipotenüs;
+    }
+
+        var HesaplaBtn = document.getElementById("buton"); 
+        hesaplaBtn.onclick=hesapla;
+</script>
