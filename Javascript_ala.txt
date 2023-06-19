@@ -1,0 +1,26 @@
+<h1>JavaScript Dikdörtgen Alan-Çevre Hesaplama </h1>
+
+<label> Kısa Kenar </label>
+<input type="number" id = "kisaKenar">
+<label>Uzun Kenar</label>
+<input type="number" id = "uzunKenar">
+<button id  = "hesapla" onclick= Hesapla() >HESAPLA</button>
+
+<div id="cevre"></div>
+<div id="alan"></div>
+
+<script>
+    function Hesapla()
+{
+    var kisaKenar=document.getElementById("kisaKenar").value;
+    var uzunKenar=document.getElementById("uzunKenar").value;
+    kk=Number(kisaKenar);
+    uk=Number(uzunKenar);
+    var dAlan = kk*uk;
+    var dCevre = 2* (uk+kk);
+    document.getElementById("alan").innerHTML="Alan:"+ dAlan;
+    document.getElementById("cevre").innerHTML="Cevre"+ dCevre;
+}
+var hspBtn=document.getElementById("hesapla");
+hesapla.onlick=Hesapla;
+</script>
